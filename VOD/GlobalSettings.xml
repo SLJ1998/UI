@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <!--<listener class-name="arrow.PowerEmailableReporter" />-->
+        <listener class-name="arrow.TestResultListener"/>
+        <listener class-name="arrow.RetryListener" />
+        <listener class-name="arrow.ExtentReporterNGListener" />
+        <!--
+        <listener class-name="org.uncommons.reportng.HTMLReporter" >
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" > -->
+    </listeners>
+    <test name="登录" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.LoginTest"/> <!--登录-->
+        </classes>
+    </test>
+
+    <test name="VOD界面" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.Console.NewTest"/>
+        </classes>
+    </test>
+
+        <test name="全局设置-转码模板界面" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.TranscodingTemplate.EnterTranscodingTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="全局设置-查看转码模板" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.TranscodingTemplate.QueryTranscodingTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="创建转码模板" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.TranscodingTemplate.NewTranscodingTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="删除转码模板" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.TranscodingTemplate.DelTranscodingTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="全局设置-水印模板界面" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.WatermarkTemplate.EnterWatermarkTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="水印模板详情" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.WatermarkTemplate.QueryWatermarkTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="删除水印模板" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.WatermarkTemplate.DelWatermarkTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="全局设置-截图模板界面" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.ScreenshotTemplate.EnterScreenshotTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="截图模板详情" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.ScreenshotTemplate.QueryScreenshotTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="新建截图模板" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.ScreenshotTemplate.NewScreenshotTemplateTest"/>
+            </classes>
+        </test>
+
+        <test name="删除截图模板" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.ScreenshotTemplate.DelScreenshotTemplateTest"/>
+            </classes>
+        </test>
+        <test name="全局设置-回调配置" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.CallbackConfiguration.EnterCallbackConfigurationTest"/>
+            </classes>
+        </test>
+
+        <test name="回调配置-回调配置" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.CallbackConfiguration.CallbackConfigurationTest"/>
+            </classes>
+        </test>
+
+        <test name="回调配置-回调模式" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.CallbackConfiguration.CallbackModeTest"/>
+            </classes>
+        </test>
+
+        <test name="回调配置-事件回调配置" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.CallbackConfiguration.EventCallbackConfigurationTest"/>
+            </classes>
+        </test>
+
+        <test name="回调配置-回调测试" verbose="2" preserve-order="true" parallel="tests">
+
+            <classes>
+                <class name="test.GlobalSettings.CallbackConfiguration.CallbackTestTest"/>
+            </classes>
+        </test>
+
+</suite>

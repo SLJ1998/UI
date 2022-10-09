@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+        <suite name="All Test Suite">
+            <listeners>
+                <!--<listener class-name="arrow.PowerEmailableReporter" />-->
+                <listener class-name="arrow.TestResultListener"/>
+                <listener class-name="arrow.RetryListener" />
+                <listener class-name="arrow.ExtentReporterNGListener" />
+                <!--
+                <listener class-name="org.uncommons.reportng.HTMLReporter" >
+                <listener class-name="org.uncommons.reportng.JUnitXMLReporter" > -->
+            </listeners>
+         <test name="登录" verbose="2" preserve-order="true" parallel="tests">
+
+                <classes>
+                    <class name="test.LoginTest"/> <!--登录-->
+                </classes>
+         </test>
+
+    <test name="VOD界面" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.Console.NewTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="分发管理-域名管理" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.DomainManagement.EnterDomainManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="搜索域名" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.DomainManagement.QueryDomainManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="创建域名" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.DomainManagement.NewDomainManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="配置域名" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.DomainManagement.EditDomainManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="删除域名" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.DomainManagement.DelDomainManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="分发管理-默认分发配置" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.DefaultDistributionConfiguration.EnterDefaultDistributionConfigurationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="配置默认分发配置" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.DefaultDistributionConfiguration.EditDefaultDistributionConfigurationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+<!--    <test name="分发管理-证书管理" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.CertificateManagement.EnterCertificateManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="创建证书" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.CertificateManagement.NewCertificateManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="修改证书" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.CertificateManagement.EditCertificateManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="删除证书" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.CertificateManagement.DelCertificateManagementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="分发管理-刷新" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.Refresh.EnterRefreshTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="刷新" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.Refresh.EditRefreshTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="操作" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.Refresh.QueryRefreshTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="分发管理-预取" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.DistributionManagement.Prefetch.EnterPrefetchTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="预取" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.DistributionManagement.Prefetch.EditPrefetchTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="操作" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.DistributionManagement.Prefetch.QueryPrefetchTest"/>
+        </classes>
+    </test>
+
+
+
+
+
+
+
+</suite>

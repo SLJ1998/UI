@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+        <suite name="All Test Suite">
+            <listeners>
+                <!--<listener class-name="arrow.PowerEmailableReporter" />-->
+                <listener class-name="arrow.TestResultListener"/>
+                <listener class-name="arrow.RetryListener" />
+                <listener class-name="arrow.ExtentReporterNGListener" />
+                <!--
+                <listener class-name="org.uncommons.reportng.HTMLReporter" >
+                <listener class-name="org.uncommons.reportng.JUnitXMLReporter" > -->
+            </listeners>
+         <test name="登录" verbose="2" preserve-order="true" parallel="tests">
+
+                <classes>
+                    <class name="test.LoginTest"/> <!--登录-->
+                </classes>
+         </test>
+
+    <test name="VOD界面" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.Console.NewTest"/>
+        </classes>
+    </test>
+
+    <test name="进入媒资管理界面" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.MediaResourceLibrary.MediaManagement.EnterMediaManagementTest"/>
+        </classes>
+    </test>
+
+</suite>

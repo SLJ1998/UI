@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+        <suite name="All Test Suite">
+            <listeners>
+                <!--<listener class-name="arrow.PowerEmailableReporter" />-->
+                <listener class-name="arrow.TestResultListener"/>
+                <listener class-name="arrow.RetryListener" />
+                <listener class-name="arrow.ExtentReporterNGListener" />
+                <!--
+                <listener class-name="org.uncommons.reportng.HTMLReporter" >
+                <listener class-name="org.uncommons.reportng.JUnitXMLReporter" > -->
+            </listeners>
+         <test name="登录" verbose="2" preserve-order="true" parallel="tests">
+
+                <classes>
+                    <class name="test.LoginTest"/> <!--登录-->
+                </classes>
+         </test>
+
+    <test name="VOD界面" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.Console.NewTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="主应用概览界面" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.OverView.AppOverViewTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="管理员概览界面" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.OverView.AdminOverViewTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="进入应用管理" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ApplicationManager.EnterApplicationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="搜索应用" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ApplicationManager.QueryApplicationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="创建应用" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ApplicationManager.NewApplicationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="修改应用" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ApplicationManager.EditApplicationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="停用应用" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ApplicationManager.StopApplicationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="启用应用" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ApplicationManager.StartApplicationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="进入资源用量界面" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.ResourceConsumption.EnterResourceConsumptionTest"/>
+        </classes>
+    </test>
+
+    <test name="资源用量-加速流量" verbose="2" preserve-order="true" parallel="tests">
+
+        <classes>
+            <class name="test.ResourceConsumption.AcceleratedFlowTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="资源用量-加速带宽" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ResourceConsumption.AcceleratedBandwidthTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="资源用量-存储流出流量" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ResourceConsumption.StorageOutflowFlowTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="资源用量-存储空间" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ResourceConsumption.StorageSpaceTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="资源用量-转码时长" verbose="2" preserve-order="true" parallel="tests">-->
+
+<!--        <classes>-->
+<!--            <class name="test.ResourceConsumption.TranscodingDurationTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>
